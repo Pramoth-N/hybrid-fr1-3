@@ -82,4 +82,13 @@ public class IhclTest extends Base{
         Reporter.attachScreenshotToReport("contact_screenshot", Reporter.test,"Clicked constactus");
         Screenshot.captureScreenShot("contact_screenshot");
     }
+
+    @Test
+    public void testThree(){
+        Set<String> parentHandles = driver.getWindowHandles();
+        home.clickOnPrivacyPolicy();
+        helper.waitForNewWindow(5, parentHandles.size());
+        helper.switchToNewWindow(parentHandles);
+        home.subscribe();
+    }
 }

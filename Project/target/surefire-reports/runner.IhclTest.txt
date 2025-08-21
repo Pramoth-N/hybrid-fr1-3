@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: runner.IhclTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 24.311 s - in runner.IhclTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 29.294 s - in runner.IhclTest
