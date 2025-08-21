@@ -43,4 +43,12 @@ public class IhclHome {
     public void clickContactUs(){
         helper.clickOnElement(IhclUI.contactUs);
     }
+
+    public void clickOnPrivacyPolicy(){
+        helper.clickOnElement(IhclUI.privacyPolicy);
+    }
+
+    public void subscribe(){
+        helper.javascriptScroll(IhclUI.fo);
+    }
 }
