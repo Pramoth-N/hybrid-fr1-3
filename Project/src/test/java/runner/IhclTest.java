@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.Status;
 
 import pages.IhclHome;
 import utils.Base;
@@ -44,8 +45,7 @@ public class IhclTest extends Base{
     public void tearDown(ITestResult result){
         if (result.getStatus() == ITestResult.FAILURE) {
             Reporter.test.log(Status.FAIL, "Test Failed: " + result.getThrowable());
-            String screenshotPath = captureScreenshot(result.getName());
-            Reporter.test.addScreenCaptureFromPath(screenshotPath);
+            Reporter.attachScreenshotToReport("fail-ss", Reporter.test ,"Test failed");
         } else if (result.getStatus() == ITestResult.SUCCESS) {
             Reporter.test.log(Status.PASS, "Test Passed");
         } else if (result.getStatus() == ITestResult.SKIP) {
@@ -66,6 +66,7 @@ public class IhclTest extends Base{
         helper.waitForNewWindow(5, parentHandles.size());
         helper.switchToNewWindow(parentHandles);
         home.bookRooms();
+        Reporter.attachScreenshotToReport("Book_btn", Reporter.test,"Clicked Book Btn");
         try {
             Thread.sleep(2000);
         } catch (Exception e) {
