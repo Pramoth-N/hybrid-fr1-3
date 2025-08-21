@@ -14,9 +14,10 @@ public class IhclHome {
 
     public void clickOnAboutUs(){
         helper.hoverOverElement(IhclUI.company);
-        Reporter.test.in
+        Reporter.test.info("Hovered on Company");
         helper.waitForElementToBeVisible(IhclUI.aboutUs, 5);
         helper.clickOnElement(IhclUI.aboutUs);
+        Reporter.test.info("Clicked on About Us");
     }
     
 }
