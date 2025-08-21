@@ -10,4 +10,5 @@ public class IhclUI {
     public static By bookYourStayBtn = By.xpath("//*[@id='main__Header']/div/div[2]/div[2]/button");
     public static By contactUs = By.xpath("//*[@id='__next']/main/div[1]/div/div[2]/div/div[9]/span");
     public static By privacyPolicy = By.xpath("//*[contains(@class ,'newsletter-wrapper')]/div[2]/a[2]");
+    public static By subscribeBtn = By.xpath("//*[contains(@class ,'newsletter-wrapper')]/div[1]");
 }

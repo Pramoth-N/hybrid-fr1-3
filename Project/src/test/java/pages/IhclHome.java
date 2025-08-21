@@ -49,6 +49,9 @@ public class IhclHome {
     }
 
     public void subscribe(){
-        helper.javascriptScroll(IhclUI.fo);
+        helper.javascriptScroll(IhclUI.footer);
+        helper.waitForElementToBeVisible(IhclUI.subscribeBtn, 5);
+        helper.clickOnElement(IhclUI.subscribeBtn);
+        helper.waitTillPageReady();
     }
 }
