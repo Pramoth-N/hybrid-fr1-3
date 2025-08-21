@@ -27,7 +27,7 @@ public class IhclHome {
         helper.javascriptScroll(IhclUI.footer);
         helper.waitForElementToBeVisible(IhclUI.gingerImg, 5);
         helper.clickOnElement(IhclUI.gingerImg);
-        LoggerHandler.info("Clicked on Ginger Image");
+        LoggerHandler.info("click on ginger");
     }
 
 
