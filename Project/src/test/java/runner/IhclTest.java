@@ -23,7 +23,7 @@ public class IhclTest extends Base{
 
     @BeforeClass
     public void extentSetUp(){
-        extent = Reporter.generateExtentReport("IHCL TATA Test Report");
+        extent = Reporter.generateExtentReport("Test Execution");
     }
 
     @AfterClass
