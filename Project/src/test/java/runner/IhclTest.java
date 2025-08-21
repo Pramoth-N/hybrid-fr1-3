@@ -73,4 +73,9 @@ public class IhclTest extends Base{
         }
         Reporter.attachScreenshotToReport("Book_btn", Reporter.test,"Clicked Book Btn");
     }
+
+    @Test
+    public void testTwo(){
+        
+    }
 }
