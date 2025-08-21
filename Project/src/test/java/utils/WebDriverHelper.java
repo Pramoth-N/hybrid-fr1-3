@@ -29,6 +29,22 @@ public class WebDriverHelper {
         }
     }
 
+    public void waitTillPageReady(){
+        try{
+            new WebDriverWait(driver , Duration.ofSeconds(15)).until(d -> ((JavascriptExecutor)d).executeScript("return document.readyState").equals("complete"));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    public void waitForNewWindow(int timeout , int size){
+        try {
+            new WebDriverWait(driver, Duration.ofSeconds(timeout)).until(d -> d.getWindowHandles().size() > size);
+        } catch (Exception e) {
+            // Handle or rethrow the exception here
+            e.printStackTrace();
+        }
+    }
+
     public void clickOnElement(By locator) {
         try {
             WebElement webElement = driver.findElement(locator);
@@ -81,15 +97,12 @@ public class WebDriverHelper {
             e.printStackTrace();
         }
     }
-
-    public void switchToNewWindow() {
+    public void switchToNewWindow(Set<String> parent) {
         try {
             Set<String> windowHandles = driver.getWindowHandles();
             for (String windowHandle : windowHandles) {
-                if (!windowHandle.isEmpty()) {
+                if (!parent.contains(windowHandle)) {
                     driver.switchTo().window(windowHandle);
-                } else {
-                    throw new Exception("New window could not be retrieved");
                 }
             }
         } catch (Exception e) {
