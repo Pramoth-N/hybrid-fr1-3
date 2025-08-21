@@ -76,6 +76,8 @@ public class IhclTest extends Base{
 
     @Test
     public void testTwo(){
-        
+        home.clickContactUs();
+        helper.waitTillPageReady();
+        Reporter.attachScreenshotToReport("contact_screenshot", Reporter.test,"Clicked constactus");
     }
 }

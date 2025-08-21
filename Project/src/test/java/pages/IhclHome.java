@@ -35,4 +35,7 @@ public class IhclHome {
         helper.clickOnElement(IhclUI.bookYourStayBtn);
     }
     
+    public void clickContactUs(){
+        helper.clickOnElement(IhclUI.contactUs);
+    }
 }
