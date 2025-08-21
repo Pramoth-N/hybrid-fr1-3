@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-21T15:41:26 UTC" name="Surefire suite" finished-at="2025-08-21T15:42:13 UTC" duration-ms="47390">
+  <suite started-at="2025-08-21T15:56:25 UTC" name="Surefire suite" finished-at="2025-08-21T15:56:50 UTC" duration-ms="24867">
     <groups>
     </groups>
-    <test started-at="2025-08-21T15:41:26 UTC" name="Surefire test" finished-at="2025-08-21T15:42:13 UTC" duration-ms="47390">
+    <test started-at="2025-08-21T15:56:25 UTC" name="Surefire test" finished-at="2025-08-21T15:56:50 UTC" duration-ms="24867">
       <class name="runner.IhclTest">
-        <test-method is-config="true" signature="extentSetUp()[pri:0, instance:runner.IhclTest@659a969b]" started-at="2025-08-21T15:41:26 UTC" name="extentSetUp" finished-at="2025-08-21T15:41:26 UTC" duration-ms="241" status="PASS">
+        <test-method is-config="true" signature="extentSetUp()[pri:0, instance:runner.IhclTest@659a969b]" started-at="2025-08-21T15:56:25 UTC" name="extentSetUp" finished-at="2025-08-21T15:56:25 UTC" duration-ms="270" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentSetUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:runner.IhclTest@659a969b]" started-at="2025-08-21T15:41:26 UTC" name="setUp" finished-at="2025-08-21T15:41:59 UTC" duration-ms="32947" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:runner.IhclTest@659a969b]" started-at="2025-08-21T15:56:25 UTC" name="setUp" finished-at="2025-08-21T15:56:33 UTC" duration-ms="8141" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testOne()[pri:0, instance:runner.IhclTest@659a969b]" started-at="2025-08-21T15:41:59 UTC" name="testOne" finished-at="2025-08-21T15:42:07 UTC" duration-ms="8357" status="PASS">
+        <test-method signature="testOne()[pri:0, instance:runner.IhclTest@659a969b]" started-at="2025-08-21T15:56:33 UTC" name="testOne" finished-at="2025-08-21T15:56:41 UTC" duration-ms="7203" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOne -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:runner.IhclTest@659a969b]" started-at="2025-08-21T15:42:07 UTC" name="tearDown" finished-at="2025-08-21T15:42:07 UTC" duration-ms="168" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:runner.IhclTest@659a969b]" started-at="2025-08-21T15:56:41 UTC" name="tearDown" finished-at="2025-08-21T15:56:41 UTC" duration-ms="152" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,15 +30,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:runner.IhclTest@659a969b]" started-at="2025-08-21T15:42:07 UTC" name="setUp" finished-at="2025-08-21T15:42:12 UTC" duration-ms="4322" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:runner.IhclTest@659a969b]" started-at="2025-08-21T15:56:41 UTC" name="setUp" finished-at="2025-08-21T15:56:49 UTC" duration-ms="7947" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testTwo()[pri:0, instance:runner.IhclTest@659a969b]" started-at="2025-08-21T15:42:12 UTC" name="testTwo" finished-at="2025-08-21T15:42:13 UTC" duration-ms="894" status="PASS">
+        <test-method signature="testTwo()[pri:0, instance:runner.IhclTest@659a969b]" started-at="2025-08-21T15:56:49 UTC" name="testTwo" finished-at="2025-08-21T15:56:49 UTC" duration-ms="786" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTwo -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:runner.IhclTest@659a969b]" started-at="2025-08-21T15:42:13 UTC" name="tearDown" finished-at="2025-08-21T15:42:13 UTC" duration-ms="184" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:runner.IhclTest@659a969b]" started-at="2025-08-21T15:56:49 UTC" name="tearDown" finished-at="2025-08-21T15:56:49 UTC" duration-ms="77" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -49,7 +49,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="flushOut()[pri:0, instance:runner.IhclTest@659a969b]" started-at="2025-08-21T15:42:13 UTC" name="flushOut" finished-at="2025-08-21T15:42:13 UTC" duration-ms="207" status="PASS">
+        <test-method is-config="true" signature="flushOut()[pri:0, instance:runner.IhclTest@659a969b]" started-at="2025-08-21T15:56:49 UTC" name="flushOut" finished-at="2025-08-21T15:56:50 UTC" duration-ms="263" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushOut -->

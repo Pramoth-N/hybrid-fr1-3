@@ -17,6 +17,11 @@ public class IhclHome {
         helper.hoverOverElement(IhclUI.company);
         Reporter.test.pass("Hovered on Company");
         LoggerHandler.info("Hovered on Company");
+        LoggerHandler.info("Hovered on Company");
+        LoggerHandler.info("Hovered on Company");
+        LoggerHandler.info("Hovered on Company");
+        LoggerHandler.info("Hovered on Company");
+        LoggerHandler.info("Hovered on Company");
         helper.waitForElementToBeVisible(IhclUI.aboutUs, 5);
         helper.clickOnElement(IhclUI.aboutUs);
         Reporter.test.info("click on about us");
