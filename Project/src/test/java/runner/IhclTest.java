@@ -2,6 +2,7 @@ package runner;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
 
@@ -13,13 +14,20 @@ import utils.WebDriverHelper;
 public class IhclTest extends Base{
     WebDriverHelper helper;
     ExtentReports extent;
+    IhclHome home;
     @BeforeMethod
     public void setUp(){
         openBrowser();
         helper = new WebDriverHelper(driver);
-        IhclHome home = new IhclHome(helper);
+        home = new IhclHome(helper);
         extent = Reporter.generateExtentReport("IHCL TATA Test Report");
         
+    }
+
+    @Test
+    public void testOne(){
+        Reporter.test = extent.createTest("Test One");
+        home.
     }
 
     @AfterMethod

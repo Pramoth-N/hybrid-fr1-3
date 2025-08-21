@@ -30,7 +30,7 @@ public class Reporter extends Base {
 
     private static Properties prop;
     private static ExtentReports extentReport;
-    private static ExtentTest test;
+    public static ExtentTest test;
   
   
     public static ExtentReports generateExtentReport() {
