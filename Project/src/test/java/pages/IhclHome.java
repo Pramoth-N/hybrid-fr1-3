@@ -19,8 +19,8 @@ public class IhclHome {
         LoggerHandler.info("Hovered on Company");
         helper.waitForElementToBeVisible(IhclUI.aboutUs, 5);
         helper.clickOnElement(IhclUI.aboutUs);
-        Reporter.test.info("Clicked on About Us");
-        LoggerHandler.info("Clicked on About Us");
+        Reporter.test.info("click on about us");
+        LoggerHandler.info("click on about us");
     }
 
     public void clickOnGinger(){
