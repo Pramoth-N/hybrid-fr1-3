@@ -66,11 +66,11 @@ public class IhclTest extends Base{
         helper.waitForNewWindow(5, parentHandles.size());
         helper.switchToNewWindow(parentHandles);
         home.bookRooms();
-        Reporter.attachScreenshotToReport("Book_btn", Reporter.test,"Clicked Book Btn");
         try {
             Thread.sleep(2000);
         } catch (Exception e) {
             e.printStackTrace();
         }
+        Reporter.attachScreenshotToReport("Book_btn", Reporter.test,"Clicked Book Btn");
     }
 }
