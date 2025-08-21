@@ -23,7 +23,7 @@ public class IhclTest extends Base{
 
     @BeforeClass
     public void extentSetUp(){
-        extent = Reporter.generateExtentReport("Test Execution");
+        extent = Reporter.generateExtentReport("IHCL TATA Test Report");
     }
 
     @AfterClass
@@ -49,7 +49,7 @@ public class IhclTest extends Base{
 
     @Test
     public void testOne(){
-        Reporter.test = extent.createTest("Test One");
+        Reporter.test = extent.createTest("Test Execution");
         home.clickOnAboutUs();
         Set<String> parentHandles = driver.getWindowHandles();
         home.clickOnGinger();
