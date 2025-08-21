@@ -2,6 +2,7 @@ package runner;
 
 import java.util.Set;
 
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -23,7 +24,7 @@ public class IhclTest extends Base{
 
     @BeforeClass
     public void extentSetUp(){
-        extent = Reporter.generateExtentReport("IHCL TATA Test Report");
+        extent = Reporter.generateExtentReport("testReport");
     }
 
     @AfterClass
@@ -40,7 +41,16 @@ public class IhclTest extends Base{
 
     
     @AfterMethod
-    public void tearDown(){
+    public void tearDown(ITestResult result){
+        if (result.getStatus() == ITestResult.FAILURE) {
+            Reporter.test.log(Status.FAIL, "Test Failed: " + result.getThrowable());
+            String screenshotPath = captureScreenshot(result.getName());
+            Reporter.test.addScreenCaptureFromPath(screenshotPath);
+        } else if (result.getStatus() == ITestResult.SUCCESS) {
+            Reporter.test.log(Status.PASS, "Test Passed");
+        } else if (result.getStatus() == ITestResult.SKIP) {
+            Reporter.test.log(Status.SKIP, "Test Skipped: " + result.getThrowable());
+        }
         if(driver != null){
             driver.quit();
         }
