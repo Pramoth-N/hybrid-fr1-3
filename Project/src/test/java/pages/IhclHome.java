@@ -20,12 +20,19 @@ public class IhclHome {
         helper.waitForElementToBeVisible(IhclUI.aboutUs, 5);
         helper.clickOnElement(IhclUI.aboutUs);
         Reporter.test.info("Clicked on About Us");
-        LoggerHandler.info("Clicked on About Us")
+        LoggerHandler.info("Clicked on About Us");
     }
 
     public void clickOnGinger(){
         helper.javascriptScroll(IhclUI.footer);
-        
+        helper.waitForElementToBeVisible(IhclUI.gingerImg, 5);
+        helper.clickOnElement(IhclUI.gingerImg);
+        LoggerHandler.info("Clicked on Ginger Image");
+    }
+
+
+    public void bookRooms(){
+        helper.clickOnElement(IhclUI.bookYourStayBtn);
     }
     
 }

@@ -1,5 +1,7 @@
 package runner;
 
+import java.util.Set;
+
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -44,11 +46,16 @@ public class IhclTest extends Base{
         }
     }
 
-    
+
     @Test
     public void testOne(){
         Reporter.test = extent.createTest("Test One");
         home.clickOnAboutUs();
+        Set<String> parentHandles = driver.getWindowHandles();
+        home.clickOnGinger();
+        helper.waitForNewWindow(5, parentHandles.size());
+        helper.switchToNewWindow(parentHandles);
+        home.bookRooms();
         try {
             Thread.sleep(2000);
         } catch (Exception e) {
