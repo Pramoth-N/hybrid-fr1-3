@@ -15,6 +15,7 @@ import com.aventstack.extentreports.Status;
 import pages.IhclHome;
 import utils.Base;
 import utils.Reporter;
+import utils.Screenshot;
 import utils.WebDriverHelper;
 
 public class IhclTest extends Base{
@@ -79,5 +80,6 @@ public class IhclTest extends Base{
         home.clickContactUs();
         helper.waitTillPageReady();
         Reporter.attachScreenshotToReport("contact_screenshot", Reporter.test,"Clicked constactus");
+        Screenshot.captureScreenShot("contact_screenshot");
     }
 }
